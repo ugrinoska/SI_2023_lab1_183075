@@ -1,0 +1,62 @@
+$ git --version
+$ cd desktop
+$ cd SI_2023_lab1_183075
+$ git init
+$ git status
+$ git add .
+$ git commit -m "initial commit"
+$ git status
+$ git remote add origin https://github.com/ugrinoska/SI_2023_lab1_183075
+$ git push -u origin master
+$ git --version
+$ cd desktop
+$ cd SI_2023_lab1_183075
+$ git init
+$ git status
+$ git add .
+$ git commit -m "Add java class"
+$ git status
+$ git remote add origin https://github.com/ugrinoska/SI_2023_lab1_183075
+$ git push -u origin master
+$ git branch
+$ git checkout -b bug1
+$ git push origin bug1
+$ nano bug1.txt
+$ git add .
+$ git commit -m " Fix wrong loop for reading"
+$ git push
+$ git push origin bug1
+$ git branch
+$ git checkout -b bug2
+$ git push origin bug2
+$ nano bug2.txt
+$ git add .
+$ git commit -m "Fix wrong condition in filterOddNumbers"
+$ git push
+$ git push origin bug2
+$ git branch
+$ git checkout -b bug3
+$ git push origin bug3
+$ nano bug3.txt
+$ git add .
+$ git commit -m " Fix method sumEvenNumbers"
+$ git push
+$ git push origin bug3
+$ git branch
+$ git checkout master
+$ ls
+$ git merge bug1
+$ git push origin master
+$ git push --all
+$ git checkout master
+$ ls
+$ git merge bug2
+$ git push origin master
+$ git push --all
+$ git checkout master
+$ ls
+$ git merge bug3
+$ git push origin master
+$ git push --all
+$ git checkout bug3
+$ git rebase master
